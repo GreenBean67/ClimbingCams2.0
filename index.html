@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset+"UTF-8">
+  <title>Climbing Cam Operational Range Comparison</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/chart.js"><script/>
+</head>
+<body>
+  <div class="container">
+    <h1>Climbing Cam Operational Range Comparison</h1>
+
+    <div class="filters">
+      <label for="camSize">Select Cam Size:</label>
+      <select id="camSize" onchange="updategraph()">
+        <option value="all">ALL</option>
+        <option value="micro">Micros</option>
+        <option value="finger">Finger</option>
+        <option value="hand">Hand</option>
+        <option value="offwidth">Offwidth</option>
+      </select>
+
+      <label for="Brand">Select Brand:</label>
+      <select id="brand" onchange="updateGraph()">
+        <option value="all">All</option>
+        <option value="BD">Black Diamond</option>
+        <option value="DMM">DMM</option>
+        <option value="Metolius">Metolius</option>
+        <option value="WC">Wild Country</option>
+        <option value="FH">FIXE Hardward</option>
+        <option value="Totem">Totem</option>
+        <option value="Trango">Trango</option>
+        <option value="CAMP">CAMP</option>
+        <option value="AC">Alernative Current</option>
+
+      <label for="Series">Select Series:</label>
+      <select id="series" onchange="updateGraph()">
+        <option value="all">All</option>
+        <option value="BDC4">Black Diamond C4</option>
+        <option value="BDC4UL">Black Diamond C4 Ultralight</option>
+        <option value="BDZ4">Black Diamond Z4</option>
+        <option value="TrangoBB">Trango Big Bro</option>
+        
